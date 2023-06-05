@@ -1,8 +1,6 @@
-s=input().lower()
-d=[]
-for i in s:
-    if s.count(i)==1 and i!=" ":
-        d.append(i)
-        d.sort()
-for i in d:
-    print(i,end='')
+a=input().lower()
+s=[]
+for i in a:
+    if i not in s and i!=" ":
+        s.append(i)
+print(''.join(sorted(s)))  
